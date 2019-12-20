@@ -1,0 +1,388 @@
+header{
+    background-color: #707070;
+    color: #FFFFFF;
+    height: 100vh;
+}
+html{
+    font-size: 62.5%;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #FFF;
+}
+.navbar-collapse{
+    position: absolute;
+    top: 7rem;
+    right: -4rem;
+}
+.content-header{
+    height: 100vh;   
+}
+.branding-size{
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+.header-text-size
+{
+    font-size: 5.4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    white-space: wrap;
+}
+.banner
+{
+    flex-grow: 1;
+}
+.content-banner{
+    flex-grow: 1;
+}
+svg{
+    font-size: 4rem;
+    border-radius: 100%;
+    border: 1px solid #DBDBDB;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+#chevron{
+    color: white;
+    animation: 1.5s manu infinite;
+}
+
+
+   
+@keyframes manu{
+
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+/* ------------------------------------------------------- */
+
+#agency{
+    background-color: #FFF;
+    padding: 10rem 0;
+}
+.about-our-agency{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 3.8rem;
+    color: #171717;
+    margin-bottom: 4rem;
+}
+.text-about-our-agency{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #5f5f5f;
+    margin-bottom: 4rem;
+    padding: 0 7rem;
+}
+
+/* ----------------------------------------------- */
+
+#four-items{
+    background-image: url('bg-items.png');
+    padding: 12rem 0;
+}
+.number-items, .text-items{
+    font-family: 'Work Sans', sans-serif;
+    color: #FFF;
+}
+.number-items{
+    font-size: 1.8rem;
+}
+.text-items{
+    font-size: 1.4rem;
+}
+.marge{
+    margin-bottom: 0;
+}
+.marge-left{
+    margin-left: 2rem;
+}
+/* --------------------------------- */
+#best-projects{
+    padding: 9rem 0;
+}
+.best-projects-title{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 3.8rem;
+    color: #171717;
+    margin-bottom: 4rem;
+}
+.best-projects-text{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #5f5f5f;
+    padding: 0 19rem;
+    margin-bottom: 4rem;
+}
+.card{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-1 {
+    background : url('http://placeimg.com/370/250/people/grayscale');
+    background-repeat : no-repeat;
+}
+.card-1:hover img {
+    visibility: hidden;
+    transition: all .3s;
+
+}
+.card-2 {
+    background-image : url('http://placeimg.com/370/515/nature/grayscale');
+    background-repeat : no-repeat;
+}
+.card-2:hover img {
+    visibility: hidden;
+    transition: all .3s;
+
+}
+
+@media screen and (max-width: 1200px){
+    .card-columns{
+        column-count: 2;
+    }
+    .ig-first-none{
+        display: none;
+    }
+    .carousel-indicators{
+        bottom: -50px;
+    }
+    .instagram-padding{
+        width: 25%;
+    }
+
+}
+@media screen and (max-width: 992px){
+    .instagram-padding{
+    width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+
+    html{
+        font-size: 30%;
+    }
+
+    .card-columns{
+        column-count: 1;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+    }
+    .icones-4{
+        column-count: 2;
+    }
+    .icones-none{
+        display: none;
+    }
+    .carousel-indicators{
+        bottom: -30px;
+    }
+}
+@media screen and (max-width: 768px){
+
+.item-none{
+    display: none;
+}
+.jc-around{
+    justify-content: space-around;
+}
+.carousel-indicators{
+    bottom: -50px;
+}
+.card-title, .card-text, .card-date{
+    text-align: center;
+}
+.a-self{
+    align-self: center;
+}
+.col-media{
+    flex: 0 0 50%;
+    max-width: 50%
+}
+}
+
+@media screen and (max-width: 450px){
+.icones-none{
+    display: none;
+}
+}
+/* ------------------------- */
+
+#michael-hopkins{
+    background-image: url('bg-items.png');
+    padding: 6rem 0;
+}
+
+
+/* ------------------- */
+#icones{
+    padding: 6.5rem 0;
+}
+
+/* ---------------------- */
+#latest-blog{
+    padding-top: 10rem;
+    padding-bottom: 17rem;
+    background-color: rgb(246, 246, 246);
+    border-bottom: 1px solid #ECECEC;
+}
+.title-latest-blog{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 3.8rem;
+    color: #171717;
+    margin-bottom: 4rem;
+}
+.text-latest-blog{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #5f5f5f;
+    margin-bottom: 4rem;
+    padding: 0 8rem;
+}
+.card-title{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #171717;
+}
+.card-text{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #5f5f5f;
+}
+.card-date{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: medium;
+    font-size: 1.2rem;
+    color: #171717;
+}
+.btn-secondary{
+    font-size: 1.2rem;
+    width: 9rem;
+    height: 3rem;
+    white-space: nowrap;
+}
+.carousel-indicators li{
+    background-color: #5f5f5f;
+}
+.carousel-indicators{
+    bottom: -50px;
+}
+
+/* ----------------------- */
+
+#contact{
+    padding: 10rem 0;
+    background-color: rgb(246, 246, 246);
+
+}
+.btn{
+    border-radius: 0;
+}
+.contact-title{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 3.8rem;
+    color: #171717;
+    margin-bottom: 4rem;
+}
+.contact-text{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #5f5f5f;
+}
+form{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.4rem;
+    height: 100%;
+}
+.form-marge{
+    margin-bottom: 3rem;
+}
+.form-padding{
+    padding-right: 21rem;
+}
+.contact-text:first-of-type{
+    margin-bottom: 3rem;
+}
+.form-control{
+    height: 5rem;
+}
+#message{
+    width: 100%;
+    height: 17rem;
+}
+.form-control-area{
+    height: 17rem;
+    width: 100%;
+}
+.btn-dark{
+    width: 33.33333333%;
+    padding: 1rem 2rem;
+}
+/*---------------------------------*/
+#about-us{
+    background-color: #0c0c0c;
+    padding-top: 9rem;
+    padding-bottom: 8rem;
+    color: #FFF;
+    border-bottom: 1px solid rgb(37, 37, 37);
+}
+.footer-title{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+.footer-text{
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+.footer-marge-b{
+    margin-bottom: 4rem;
+}
+.icon-tw{
+    align-self: flex-start;
+}
+.marge-twits-text{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.marge-twits-text:last-of-type{
+    margin-bottom: 0;
+}
+.instagram-padding{
+
+    padding-bottom: 0.2rem;
+}
+.reseaux-w{
+    width: 15%;
+}
+
+/* ------------------------------- */
+footer{
+    background-color: #0c0c0c;
+    padding: 3rem 0;
+    color: #FFF;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.4rem;
+}
